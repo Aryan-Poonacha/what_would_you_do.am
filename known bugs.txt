@@ -1,0 +1,3 @@
+1. Mana bar not working in updateAll().
+2. upLog not working when called within Buy().
+3. Two audio sounds playing at once, not one, every 10 secs.

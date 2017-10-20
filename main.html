@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    What Would You Do, AM?
+  </title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="CSS/Icons/font/flaticon.css">
+  <link rel="stylesheet" href="CSS/UIstyle.css">
+
+  <script src="Scripts/library.js"></script>
+  <script src="Scripts/script.js"></script>
+  <script>
+  $(document).ready(function()
+  {
+    $("#myModal").modal('show');
+  });
+  </script>
+</head>
+<body style="background: url('CSS/Images/am_bg.jpg');">
+  <div class="container-fluid">
+
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title div-heading">THE REALM OF THE DEAD GOD</h1>
+          </div>
+          <div class="modal-body">
+            <p style="color:black;" id="modalText" class="div-content">The Dead God is a deity who wreaks destruction on the living. It commands legions of undead followers.</p>
+            <p style="color:black;" id="modalText" class="div-content">The armies of the Dead God went forth to Turstarkuri, raising the dead of previous invaders and laying waste to the lowland kingdoms. There, they proceeded to the mountain monastery, where the Monks of Turstarkuri resided in meditation. The monks believed the invaders to be mere illusions, and were slain on the spot. Only a young acolyte, the future Anti-Mage, managed to escape. The slain monks rose as undead, and joined the Dead God's priesthood.</p>
+            <p style="color:black;" id="modalText" class="div-content">Now, Magina, the Anti Mage, has returned to the forsaken lands, and he seeks a confrontation with the Dead God Himself. Revenge is his motive, pure and simple. It's up to you to ensure that is is exacted.</p>
+          </div>
+          <div class="modal-footer">
+            <button style="color:black;" type="button" class="btn btn-default div-content" data-dismiss="modal">Understood</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!--
+time stuff here
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+
+          <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <div class="well radiant">
+          </div>
+          </div>
+
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="well">
+          </div>
+          </div>
+
+          <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <div class="well dire">
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+-->
+
+    <div class="row">
+        <div class="col-md-6">
+          <div class="well">
+
+          <div class ="row">
+            <div class="col-md-6">
+              <div id="am-area">
+                <img class="img-responsive" src="CSS/Images/am.png"></img>
+
+                <p style="color: #5cb85c; text-align: center;" class="div-content">Health:</p>
+                <div class="progress">
+  <div id="am-healthbar" class="progress-bar progress-bar-success active" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+  </div>
+</div>
+
+<p style="color: #428bca; text-align: center;" class="div-content">Mana:</p>
+<div class="progress">
+  <div id="am-manabar" class="progress-bar progress-bar-primary active" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+  </div>
+</div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div id="enemy-area">
+                <p id="enemy-name" class="div-content"><b>Kobold</b></p>
+                <img class="img-responsive" id="enemy-img" src="CSS/Images/Neutrals/kobold.png"></img>
+                <p id="health-heading" style="color: #5cb85c; text-align: center; display:none;" class="div-content">Health:</p>
+                <div id="enemy-healthbar-holder" style="display:none;" class="progress">
+  <div id="enemy-healthbar" class="progress-bar progress-bar-success active" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%; display:none;">
+  100/565
+  </div>
+</div>
+              </div>
+          </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="well">
+                      <h4 class="div-heading">Abilities</h4>
+                      <span class="div-content">Experience Points Available: </span><span id="lvlup" class="div-content">0</span>
+                      <div class="row">
+
+                        <div class="col-md-3 lg-3">
+                          <img class="img-responsive ability-icon" src="CSS/Icons/q.png"></img><span class="div-content"> Mana Break</span>
+                        </div>
+
+                        <br>
+
+                        <div class="col-md-3">
+                          <img class="img-responsive ability-icon" src="CSS/Icons/w.png"></img><span class="div-content"> Blink</span>
+                        </div>
+
+                        <br>
+
+                        <div class="col-md-3">
+                          <img class="ability-icon img-responsive" src="CSS/Icons/e.png"></img><span class="div-content"> Spell Shield</span>
+                        </div>
+
+                        <br>
+
+                        <div class="col-md-3">
+                          <img class="ability-icon img-responsive" src="CSS/Icons/r.png"></img><span class="div-content"> Mana Void</span>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+                <div class="col-md-6 item-div">
+                    <div class="well">
+                      <h4 class="div-heading">Items</h4>
+                      <span class="div-content">Item Rating: </span><span id="item-rating" class="div-content">Weak</span>
+                      <br>
+                      <div class="row">
+
+                        <div class="col-md-3 col-lg-3">
+                          <img class="img-responsive" id="item1" src="CSS/Icons/empty.png"></img><span id="name1" class="div-content">Empty</span>
+                        </div>
+
+                        <br>
+
+                        <div class="col-md-3">
+                          <img class="img-responsive" id="item2" src="CSS/Icons/empty.png"></img><span id="name2" class="div-content"> Empty</span>
+                        </div>
+
+                        <br>
+
+                        <div class="col-md-3">
+                          <img class="img-responsive" id="item3" src="CSS/Icons/empty.png"></img><span id="name3" class="div-content"> Empty</span>
+                        </div>
+
+                        <br>
+
+                        <div class="col-md-3">
+                          <img class="img-responsive" id="item4" src="CSS/Icons/empty.png"></img><span id="name4" class="div-content"> Empty</span>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 fight-div">
+                  <div class="well">
+                    <h4 class="div-heading">Fight</h4>
+                    <p style="text-align:center;" class="div-content">Engage in battle with the forces of the Dead God.</p>
+                    <button class="btn btn-sm btn-block btn-success div-content" id="fight1" onclick="fight(fight1);">Advance Forward</button>
+                    <button style="display:none;" class="btn btn-sm btn-block btn-danger" id="fight2" onclick="fight2">Look For Stragglers</button>
+                  </div>
+                </div>
+                <div class="col-md-6 shop-div">
+                  <div style="overflow:hidden" class="well">
+                    <p class="div-heading">Shop</p><span style="float:right;" id="gold"><img src = "CSS/Images/gold.png"></img> 625</span>
+                    <p style="text-align:center;" class="div-content">Items To Purchase:</p>
+                    <button class="btn btn-sm btn-block btn-primary div-content" id="choice1" onclick="Buy(choice1);">Salve (Health Option) (110g)</button>
+                    <button class="btn btn-sm btn-block btn-warning" id="choice2" onclick="Buy(choice2);">Clarity (Mana Potion) (50g)</button>
+                    <button class="btn btn-sm btn-block btn-danger" id="choice3" onclick ="Buy(choice3);">Tango (Greater Healing Potion) (125g)</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-md-8">
+          <div class="well">
+            <h4 class="div-heading">Log</h4>
+            <iframe id="log" src="log.html"></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="well">
+
+            <h4 class="div-heading">ANTI-MAGE</h4>
+            <div class="table-responsive">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td class="stats-left"><i class="flaticon-sword"></i></td>
+        <td class="stats-right" id="damage">100</td>
+
+        <td class="stats-left"><img src="CSS/Images/Strength.png"></td>
+        <td class="stats-right" id="str">21</td>
+      </tr>
+      <tr>
+        <td class="stats-left"><i class="flaticon-security-badge"></i></td>
+        <td class="stats-right" id="armour">5</td>
+
+        <td class="stats-left"><img src="CSS/Images/agi.png"></td>
+        <td class="stats-right" id="agi">42</td>
+      </tr>
+      <tr>
+        <td class="stats-left"><i class="flaticon-boot"></i></td>
+        <td class="stats-right" id="ms">325</td>
+
+        <td class="stats-left"><img src="CSS/Images/int.png"></td>
+        <td class="stats-right" id="int">21</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+          </div>
+        </div>
+    </div>
+<!--
+    <audio style="display:none;" autoplay loop>
+  <source src="CSS/Sounds/soundtrack.mp3" type="audio/mpeg">
+</audio>
+  </div>
+-->

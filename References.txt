@@ -1,0 +1,11 @@
+https://stackoverflow.com/questions/16390370/how-can-i-get-a-bootstrap-column-to-span-multiple-rows
+https://moddota.com/forums/resources
+
+.flaticon-boot
+Author: Freepik
+
+.flaticon-security-badge
+Author: Icon Works
+ 
+.flaticon-sword
+Author: Vaadin
