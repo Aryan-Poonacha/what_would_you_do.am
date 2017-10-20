@@ -1,0 +1,2 @@
+# what_would_you_do.am
+An impulsive project whose idea I got from the fact that one can make a sentence from .do.am domains, specifially this repository's namesake, where am is Anti Mage, a video game character from the game DOTA 2. I pulled an all-nighter completing it thus far, but due to school and other projects, I decided not to commit to it for the sake of the domain name being a sentence (my primary motivator in creating it thus far). 
