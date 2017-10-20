@@ -1,0 +1,179 @@
+/*ALL FONTS */
+
+@font-face {
+    font-family: 'radiance';
+    src: url('Fonts/radiance.ttf');
+}
+
+@font-face {
+    font-family: 'radiance-bold';
+    src: url('Fonts/radiance-bold.ttf');
+}
+
+@font-face {
+    font-family: 'trajan';
+    src: url('Fonts/trajan.ttf');
+}
+
+@font-face {
+    font-family: 'trajan-bold';
+    src: url('Fonts/trajan-bold.ttf');
+}
+
+@font-face {
+    font-family: 'optimus';
+    src: url('Fonts/Optimus.ttf');
+}
+
+@font-face {
+    font-family: 'optimus-semibold';
+    src: url('Fonts/Optimus-semibold.ttf');
+}
+
+/* ALL TEXT TYPE DEFINITIONS */
+.div-heading
+{
+  font-family: 'trajan-bold';
+  font-size: 200%;
+}
+
+.log-text
+{
+  font-family: 'radiance';
+  color: white;
+  font-size: 120%;
+}
+
+.stats-left
+{
+  font-family: 'optimus';
+  color: grey;
+  font-size: 110%;
+}
+
+.stats-right
+{
+  font-family: 'optimus-semibold';
+  color: white;
+  font-size: 110%;
+}
+
+.div-content
+{
+  font-family: 'optimus';
+  color: white;
+  font-size: 110%;
+}
+
+#gold
+{
+  font-family: 'optimus-semibold';
+  color: white;
+  font-size: 150%;
+}
+
+/*SIZES */
+
+#log
+{
+  border-style: none;
+  position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 900px;
+}
+
+/*
+#am-area
+{
+  border-style: solid;
+  border-color: red;
+}
+
+#enemy-area
+{
+  border-style: solid;
+  border-color: red;
+}
+
+*/
+body
+{
+  height: 100%;
+}
+
+.fight-div
+{
+  padding-top: 5px;
+}
+
+.shop-div
+{
+  padding-top: 5px;
+}
+
+.item-div
+{
+  padding-bottom: -5px;
+}
+
+/* BORDERS AND PHYSICAL COLOURS */
+
+.well
+{
+  border-radius : 2px;
+  background-color: #2F363D;
+  color: white;
+  font-family: 'trajan-bold';
+  margin: 0px !important;
+}
+
+/*ANIMATIONS AND EFFECTS */
+
+.well:hover
+{
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transform: translate(-5px, 5px) scale(1.05);
+}
+
+#enemy-img
+{
+  display: none;
+transition-property: filter;
+-webkit-transition-property: filter:;
+-moz-transition-property: filter;
+-o-transition-property: filter;
+}
+
+#enemy-img:active
+{
+  transition-duration: .05s;
+  -webkit-transition-duration: .05s;
+  -moz-transition-duration: .05s;
+  -o-transition-duration: .05s;
+  filter: drop-shadow(1px 1px 5px #ba0d0d) drop-shadow(-1px -1px 5px #ba0d0d);
+}
+
+#enemy-name
+{
+  color: #d9534f;
+  text-align:center;
+  display: none;
+}
+
+.img-responsive
+{
+  transition-property: filter;
+  transition-duration: 0.5s;
+}
+
+.img-responsive:hover
+{
+  transform: scale(1.05) translate(-2px, 1px);
+}
+
+.ability-icon
+{
+  bordr
+}
